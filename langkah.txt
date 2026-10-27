@@ -1,0 +1,86 @@
+Rian@DESKTOP-E44DAK2 MINGW64 /c/Project/BelajarGit
+$ git config --global user.email "febrianyude@gmail.com"
+
+Rian@DESKTOP-E44DAK2 MINGW64 /c/Project/BelajarGit
+$ git init
+Initialized empty Git repository in C:/Project/BelajarGit/.git/
+
+Rian@DESKTOP-E44DAK2 MINGW64 /c/Project/BelajarGit (master)
+$ git add .
+
+Rian@DESKTOP-E44DAK2 MINGW64 /c/Project/BelajarGit (master)
+$ git remote add origin https://github.com/FebrianAssaniYude/BelajarGit.git
+
+Rian@DESKTOP-E44DAK2 MINGW64 /c/Project/BelajarGit (master)
+$ git commit -m "first commit"
+[master (root-commit) beeca39] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hai.txt
+
+Rian@DESKTOP-E44DAK2 MINGW64 /c/Project/BelajarGit (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 217 bytes | 72.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/FebrianAssaniYude/BelajarGit.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Rian@DESKTOP-E44DAK2 MINGW64 /c/Project/BelajarGit (master)
+$ git add .
+
+Rian@DESKTOP-E44DAK2 MINGW64 /c/Project/BelajarGit (master)
+$ git commit -m "second commit"
+[master 75207f8] second commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 src/css.txt
+ create mode 100644 src/html.txt
+
+Rian@DESKTOP-E44DAK2 MINGW64 /c/Project/BelajarGit (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 321 bytes | 160.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/FebrianAssaniYude/BelajarGit.git
+   beeca39..75207f8  master -> master
+
+Rian@DESKTOP-E44DAK2 MINGW64 /c/Project/BelajarGit (master)
+$ git add .
+
+Rian@DESKTOP-E44DAK2 MINGW64 /c/Project/BelajarGit (master)
+$ git commit -m "perubahan ketiga"
+[master 6dd1dbe] perubahan ketiga
+ 3 files changed, 1 insertion(+)
+ rename src/css.txt => hallo.txt (100%)
+ delete mode 100644 src/html.txt
+
+Rian@DESKTOP-E44DAK2 MINGW64 /c/Project/BelajarGit (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 297 bytes | 148.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/FebrianAssaniYude/BelajarGit.git
+   75207f8..6dd1dbe  master -> master
+
+Rian@DESKTOP-E44DAK2 MINGW64 /c/Project/BelajarGit (master)
+$ git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (2/2), 876 bytes | 62.00 KiB/s, done.
+From https://github.com/FebrianAssaniYude/BelajarGit
+   6dd1dbe..2df05ad  master     -> origin/master
+Updating 6dd1dbe..2df05ad
+Fast-forward
+ hallo.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 hallo.txt
+
